@@ -26,3 +26,5 @@ Full methodology description available at: https://kalpicast.gr/en/methodology/p
 - elections_eval_party:	The number of elections used for the evaluation of the pollster, where the party was been tracked.
 - mean_bias_party:	The mean bias pollster exhibits towards the party. Positive values favor the party. This may be misleading because it has not been adjust to remove election specific effects.
 - mean_bias_party_pm:	The relative (plus-minus) version of mean_bias_party. Essentially, the mean_bias_party values within each election are standardized to make sure the election specific difficulty does not affect overall pollster performance.
+- mse_party:	The mean squared error pollster exhibits for the party. This may be misleading because it has not been adjust to remove election specific effects.
+- mse_party_pm:	The relative (plus-minus) version of mse_party. Essentially, the mses_party values within each election are standardized to make sure the election specific difficulty does not affect overall pollster performance.
