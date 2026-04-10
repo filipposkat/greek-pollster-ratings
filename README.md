@@ -5,7 +5,7 @@ Full methodology description available at: https://kalpicast.gr/en/methodology/p
 
 ### Column	Description (pollster_ratings.csv)
 - starRating:	A star rating ranging from 1 – 5 based exclusively on balancedScore (more stars is better)
-- balanacedScore:	Score combining logScore and biasScore with equal weights (lower is better)
+- balancedScore:	Score combining logScore and biasScore with equal weights (lower is better)
 - logScore:	The standardized and shrunk mean_neg_logL_pm. The shrinkage is performed using the formula:\
   Shrunk value = $`m_0*s_0^2/(s_0^2+s^2) + m*s^2/(s_0^2+s^2)`$,  
   where m0=Mean (across pollsters) of IQR-winsorized mean_neg_logL_pm, s0=tau (Sampling heterogeneity of the estimator, as estimated by DerSimonian–Laird formula), m=Pollster specific mean_neg_logL_pm, s=Pollster specific sampling std of estimator= std_neg_logL_pm/sqrt(elections_eval)
