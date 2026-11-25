@@ -3,6 +3,28 @@
 
 Full methodology description available at: https://kalpicast.gr/en/methodology/pollster-ratings
 
+## Ratings structure
+
+Historical ratings are organized by basis and release year. Vote-intention files use the unprefixed names; vote-estimate files use the `ve_` prefix.
+
+```text
+.
+├── data/
+│   └── ratings/
+│       ├── vote_intention/
+│       │   └── YYYY/
+│       │       ├── pollster_ratings_YYYY_vX.X.csv
+│       │       └── pollster_ratings_YYYY_vX.X.ods
+│       └── vote_estimate/
+│           └── YYYY/
+│               └── ve_pollster_ratings_YYYY_vX.X.csv
+├── pollster_ratings_latest.csv
+├── pollster_ratings_latest.ods
+└── ve_pollster_ratings_latest.csv
+```
+
+`YYYY` is the release year and `X.X` is the version number.
+
 ### Column	Description (pollster_ratings.csv)
 - starRating:	A star rating ranging from 1 – 5 based exclusively on balancedScore (more stars is better)
 - balancedScore:	Score combining logScore and biasScore with equal weights (lower is better)
